@@ -185,6 +185,18 @@
   </div>
 
   <div class="project-card">
+    <h3>端到端说话人日志大模型</h3>
+    <div class="meta">弱VAD → LLM(ASR+转折点检测) → SOT → 声纹聚类 · 2025–至今</div>
+    <ul>
+      <li>基于 LLM 的端到端说话人转折点检测，替代传统 ASR 与日志分离的级联管线，保持在线聚类和说话人数量不受限的特性。</li>
+      <li>长时弱 VAD 策略解决远场等难点场景丢句/过切问题，LLM 同时完成 ASR 与转折点检测，输出 SOT 格式。</li>
+      <li>基于 LLM 切分边界的强先验（片段间不同说话人、片段内同一说话人），优化段间-段内聚类。</li>
+      <li>Qwen3ASR 实时流式输出 + RAG 热词修复。</li>
+    </ul>
+    <div class="result">指标提升（vs 级联方案）：WER 23.96%→21.19% · 混淆率 12.11%→9.79% · 说话人数量错误率 37.71%→20.59% · DER 27.84%→22.46% · cpWER 44.30%→35.97%</div>
+  </div>
+
+  <div class="project-card">
     <h3>Audio Deepfake Detection Challenge (ADD 2023)</h3>
     <div class="meta">IJCAI · 2023</div>
     <div class="result">🏆 伪造算法识别 第1名 · 伪造语音检测 第2名 · 伪造语音生成 第3名</div>
