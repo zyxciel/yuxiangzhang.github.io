@@ -133,7 +133,7 @@
   <p class="about-text">
     I am a Speech &amp; Audio AI Researcher, working on end-to-end speech translation, 
     speaker diarization with large language models, and voice anti-spoofing. I received my Ph.D. from the 
-    <strong>Institute of Acoustics, Chinese Academy of Sciences</strong>, where I focused on deepfake audio 
+    Institute of Acoustics, Chinese Academy of Sciences, where I focused on deepfake audio 
     detection and speaker recognition. I have published over 10 papers at venues including 
     IEEE/ACM TASLP, ICASSP, INTERSPEECH, and IEEE SPL, with 300+ total citations.
   </p>
@@ -146,7 +146,7 @@
       <div class="date">Jul 2024 – Present</div>
       <h3>Speech Algorithm Engineer</h3>
       <div class="org">Industry</div>
-      <p>End-to-end speech translation (S2TT), speaker diarization LLM, model training &amp; optimization.</p>
+      <p>End-to-end speech translation (S2TT), speaker diarization, model training &amp; optimization.</p>
     </div>
     <div class="timeline-item">
       <div class="date">Aug 2019 – Jul 2024</div>
@@ -192,13 +192,13 @@
   </div>
 
   <div class="project-card">
-    <h3>End-to-End Speaker Diarization with LLM</h3>
+    <h3>Speaker Diarization with LLM</h3>
     <div class="meta">Weak VAD → LLM (ASR + Turn Detection) → SOT → Clustering · 2025–Present</div>
     <ul>
       <li>Leveraging LLMs to replace the cascade of separated ASR and diarization, reducing speaker confusion and segmentation errors while retaining online clustering and unbounded speaker counts.</li>
       <li>Designed a long-form weak VAD strategy to avoid sentence loss and over-segmentation; LLM simultaneously handles ASR and speaker turn detection, outputting SOT format.</li>
       <li>Segment-aware clustering uses LLM-predicted turn boundaries as strong priors (across-boundary = likely different speakers, within-boundary = likely same speaker).</li>
-      <li>Real-time streaming output via Qwen3ASR with RAG hot-word correction.</li>
+      <li>Real-time streaming output with RAG hot-word correction.</li>
     </ul>
     <div class="result">Key improvements (vs cascade): WER: 23.96%→21.19% · Speaker Confusion: 12.11%→9.79% · Speaker Count Error: 37.71%→20.59% · DER: 27.84%→22.46% · cpWER: 44.30%→35.97%</div>
   </div>
