@@ -344,16 +344,15 @@
   </div>
 
   <div class="project-card">
-    <h3>基于大模型的说话人日志</h3>
-    <div class="meta">弱 VAD → LLM (ASR+转折点检测) → SOT → 声纹聚类 &middot; 2025–至今</div>
+    <h3>说话人日志大模型</h3>
+    <div class="meta">基于大模型的端到端说话人日志 &middot; 2025–至今</div>
     <ul>
-      <li>基于 LLM 的端到端说话人转折点检测，替代传统 ASR 与日志分离的级联管线，保持在线聚类和说话人数量不受限的特性</li>
-      <li>长时弱 VAD 策略解决远场等难点场景丢句/过切问题，LLM 同时完成 ASR 与转折点检测，输出 SOT 格式</li>
-      <li>基于 LLM 切分边界的强先验（片段间不同说话人、片段内同一说话人），优化段间-段内聚类</li>
-      <li>实时流式输出 + RAG 热词修复</li>
+      <li>设计 LLM 驱动的端到端说话人日志框架，统一 ASR 与说话人转折点检测，替代传统级联管线</li>
+      <li>开发适配复杂声学场景的长时语音处理策略</li>
+      <li>提出带有强结构先验的片段感知聚类方法，提升在线聚类精度</li>
+      <li>集成流式 ASR 解码与动态上下文增强</li>
     </ul>
-    <div class="result">各指标均有显著提升：相比级联系统有效降低了 WER、说话人混淆率和 DER</div>
-    <div class="result">相比级联管线在 WER、说话人混淆、DER 等指标上全面超越——<strong>说话人数量错误率降低 45%</strong>。</div>
+    <div class="result">相比级联基线方案，在各项说话人日志核心指标上均取得显著且一致的提升。</div>
   </div>
 
   <div class="project-card">

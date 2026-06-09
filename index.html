@@ -348,15 +348,14 @@
 
   <div class="project-card">
     <h3>Speaker Diarization with LLM</h3>
-    <div class="meta">Weak VAD → LLM (ASR + Turn Detection) → SOT → Clustering &middot; 2025–Present</div>
+    <div class="meta">LLM-Based End-to-End Diarization &middot; 2025–Present</div>
     <ul>
-      <li>LLM replaces cascaded ASR and diarization pipelines — retains online clustering and unbounded speaker counts</li>
-      <li>Long-form weak VAD avoids sentence loss and over-segmentation; LLM handles ASR + turn detection in SOT format</li>
-      <li>Segment-aware clustering uses LLM-predicted turn boundaries as strong priors (across-boundary → different speakers, within-boundary → same speaker)</li>
-      <li>Real-time streaming output with RAG hot-word correction</li>
+      <li>Designed an LLM-driven speaker diarization framework that unifies ASR and speaker turn detection, replacing the traditional cascade pipeline</li>
+      <li>Developed long-form speech processing strategy compatible with challenging acoustic scenarios</li>
+      <li>Proposed segment-aware speaker clustering with strong structural priors for improved online clustering accuracy</li>
+      <li>Integrated streaming ASR decoding with dynamic contextual biasing</li>
     </ul>
-    <div class="result">Significant improvements across all metrics: reduced WER, speaker confusion, and DER compared to cascade system</div>
-    <div class="result">Achieved substantial gains over cascade pipeline in WER, speaker confusion, and DER — <strong>speaker count error reduced by 45%</strong>.</div>
+    <div class="result">Achieved significant and consistent improvements over the cascade baseline across all key diarization metrics.</div>
   </div>
 
   <div class="project-card">
