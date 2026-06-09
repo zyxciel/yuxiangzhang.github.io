@@ -248,7 +248,7 @@
     </li>
     <li class="exp-item">
       <span class="date">2015.8 – 2019.7</span>
-      <span class="desc"><strong>B.E.</strong>, <span class="org">Tsinghua University</span>.</span>
+      <span class="desc"><strong>B.E.</strong>, <span class="org">Department of Electronic Engineering, Tsinghua University</span>.</span>
     </li>
   </ul>
 </section>
@@ -430,8 +430,22 @@
 </div>
 
 <footer>
-  <div class="container">&copy; 2026 Yuxiang Zhang</div>
+  <div class="container">&copy; 2026 Yuxiang Zhang &middot; <span id="visitor-count">...</span> visitors</div>
 </footer>
 
+<script>
+(function(){
+  var el = document.getElementById('visitor-count');
+  if (!el) return;
+  var selfKey = 'yx_self_visit_' + new Date().toDateString();
+  var isSelf = localStorage.getItem(selfKey);
+  if (isSelf) { el.textContent = '...'; return; }
+  localStorage.setItem(selfKey, '1');
+  fetch('https://api.countapi.xyz/hit/zyxciel-site/visits')
+    .then(r => r.json())
+    .then(d => { if (el) el.textContent = Number(d.value).toLocaleString(); })
+    .catch(function(){ el.textContent = '...'; });
+})();
+</script>
 </body>
 </html>
