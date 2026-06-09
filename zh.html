@@ -126,7 +126,7 @@
   <div class="section-title">👋 关于我</div>
   <p class="about-text">
     语音算法工程师，从事端到端语音翻译、基于大模型的说话人日志、伪造语音检测研究。
-    博士毕业于<strong>中国科学院声学研究所</strong>，研究方向为深度伪造音频检测与说话人识别。
+    博士毕业于中国科学院声学研究所，研究方向为深度伪造音频检测与说话人识别。
     在 IEEE/ACM TASLP、ICASSP、INTERSPEECH、IEEE SPL 等顶级会议和期刊发表论文 10 余篇，
     总引用 300+。
   </p>
@@ -139,7 +139,7 @@
       <div class="date">2024.7 – 至今</div>
       <h3>语音算法工程师</h3>
       <div class="org">业界</div>
-      <p>端到端语音翻译、说话人日志大模型、模型训练与优化</p>
+      <p>端到端语音翻译、说话人日志、模型训练与优化</p>
     </div>
     <div class="timeline-item">
       <div class="date">2019.8 – 2024</div>
@@ -185,13 +185,13 @@
   </div>
 
   <div class="project-card">
-    <h3>端到端说话人日志大模型</h3>
+    <h3>说话人日志</h3>
     <div class="meta">弱VAD → LLM(ASR+转折点检测) → SOT → 声纹聚类 · 2025–至今</div>
     <ul>
       <li>基于 LLM 的端到端说话人转折点检测，替代传统 ASR 与日志分离的级联管线，保持在线聚类和说话人数量不受限的特性。</li>
       <li>长时弱 VAD 策略解决远场等难点场景丢句/过切问题，LLM 同时完成 ASR 与转折点检测，输出 SOT 格式。</li>
       <li>基于 LLM 切分边界的强先验（片段间不同说话人、片段内同一说话人），优化段间-段内聚类。</li>
-      <li>Qwen3ASR 实时流式输出 + RAG 热词修复。</li>
+      <li>实时流式输出 + RAG 热词修复。</li>
     </ul>
     <div class="result">指标提升（vs 级联方案）：WER 23.96%→21.19% · 混淆率 12.11%→9.79% · 说话人数量错误率 37.71%→20.59% · DER 27.84%→22.46% · cpWER 44.30%→35.97%</div>
   </div>
